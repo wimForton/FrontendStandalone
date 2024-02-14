@@ -1,0 +1,53 @@
+﻿:host {
+    max-width: 1280px;
+    padding: 2rem;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #F2F2F2;
+}
+
+tr:nth-child(odd) {
+    background: #FFF;
+}
+
+th, td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+table {
+    margin: 0 auto;
+}
+.title{
+    color: white;
+}
+.pageContainer{
+    max-width: 1000px;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(24, 40, 54);
+    background-color: rgb(19, 30, 49);
+    padding: 15px;
+}
+.mybutton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 46, 68);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.topbuttons{
+    background: #8189ce;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(207, 210, 245);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

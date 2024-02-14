@@ -1,0 +1,1 @@
+C:\Users\wim\source\repos\BackendMVC\FrontendANG\obj\Debug\FrontendANG.esproj.CoreCompileInputs.cache

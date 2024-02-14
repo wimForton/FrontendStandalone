@@ -1,0 +1,52 @@
+<h1 class="title">Upload Midi</h1>
+<div class="row" style="margin-bottom:15px;">
+    <div class="topbuttons">
+      <table id="table">
+        <td>
+          <tr>
+            <td><p>Midi: </p></td>
+            <td>
+            <input type="file" #file placeholder="Select file" (change)="uploadFile(file.files)" style="display:none;">
+            <button type="button" class="mybutton" (click)="file.click()">Select File</button>
+            <span class="mybutton" *ngIf="progress > 0">
+              {{progress}}%
+            </span>
+            <span class="mybutton" *ngIf="message">
+              {{message}}
+            </span>
+            </td>
+          </tr>
+          <tr>
+            <td><p>Composer Picture: </p></td>
+            <td>
+            <input type="file" #file placeholder="Select file" (change)="uploadFile(file.files)" style="display:none;">
+            <button type="button" class="mybutton" (click)="file.click()">Select File</button>
+            <span class="mybutton" *ngIf="progress > 0">
+              {{progress}}%
+            </span>
+            <span class="mybutton" *ngIf="message">
+              {{message}}
+            </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Composer: </p>
+            </td>
+            <td>
+              <input type="text" class="mybutton" [(ngModel)]="composer" />
+            </td>
+          </tr>
+          <tr>
+            <td><p>Title: </p></td>
+            <td><input type="text" class="mybutton" [(ngModel)]="title" /></td>
+          </tr>
+          <tr>
+            <td><p>Year: </p></td>
+            <td><input type="text" class="mybutton" [(ngModel)]="year" /></td>
+          </tr>
+        </td>
+        <td style="width: 100%;"></td>
+      </table>
+    </div>
+  </div>

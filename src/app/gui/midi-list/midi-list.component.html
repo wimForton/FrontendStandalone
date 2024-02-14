@@ -1,0 +1,26 @@
+<h1 class="title">Midi files</h1>
+<div class="topbuttons">
+    <td><button class="mybutton" [routerLink]="['uploadmidi']">upload midi file</button></td>
+</div>
+<div class="paginator">
+    <ngb-pagination class="pagination" [collectionSize]="totalmidifiles" [pageSize]="itemsperpage" [maxSize]="5" [rotate]="true"  [(page)]="currentpage" aria-label="Default pagination" (pageChange)="getMidiList()"></ngb-pagination>
+</div>
+<p *ngIf="!midifiles">Loading...</p>
+<table *ngIf="midifiles">
+    <thead>
+        <tr>
+            <th>filePath</th>
+            <th>song number</th>
+            <th>composer</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let midifile of midifiles">
+            <td>{{ midifile.filePath }}</td>
+            <td>{{ midifile.fileNumber }}</td>
+            <td>{{ midifile.composer }}</td>
+            <td><button class="mybutton" [routerLink]="['mididetails',midifile.id]">details</button></td>
+        </tr>
+    </tbody>
+</table>
