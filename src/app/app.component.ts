@@ -5,6 +5,7 @@ import { UploadComponent } from './api/upload/upload.component';
 import { DownloadComponent } from './api/download/download.component';
 import { RouterModule } from '@angular/router';
 import { PixiappComponent } from './gui/pixijs/pixiapp/pixiapp.component';
+import { TestComponent } from './threejs/testbench/test/test.component';
 
 
 
@@ -13,7 +14,7 @@ import { PixiappComponent } from './gui/pixijs/pixiapp/pixiapp.component';
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     standalone: true,
-    imports: [MidiListComponent, UploadComponent, DownloadComponent, RouterModule, PixiappComponent]
+    imports: [MidiListComponent, UploadComponent, DownloadComponent, RouterModule, PixiappComponent, TestComponent]
 })
 export class AppComponent{
 
