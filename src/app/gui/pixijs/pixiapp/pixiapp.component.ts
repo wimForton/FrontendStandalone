@@ -4,7 +4,7 @@ import { Application } from 'pixi.js';
 import { MidiTrack } from 'src/app/api/_models/midiTrack';
 import { Midi } from '@tonejs/midi';
 import * as Tone from "Tone";
-
+//remove this comment
 class note{ 
   time: number = 0;
   note: string = "";
